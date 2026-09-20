@@ -1,0 +1,34 @@
+{
+  "name": "drurl",
+  "version": "1.0.0",
+  "description": "CLI tool to check URLs for redirects, security threats, and more",
+  "main": "src/index.js",
+  "bin": {
+    "drurl": "./src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "url",
+    "redirect",
+    "checker",
+    "security",
+    "phishing",
+    "malware",
+    "safe-browsing",
+    "cli",
+    "link-checker"
+  ],
+  "author": "RedirectChecker.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redirectchecker/drurl"
+  },
+  "homepage": "https://redirectchecker.com",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
