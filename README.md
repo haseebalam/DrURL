@@ -1,18 +1,38 @@
-# drurl
+<p align="center">
+  <img src="https://redirectchecker.com/logo.png" alt="DrURL" width="80" />
+</p>
 
-**CLI tool to check URLs for redirects, security threats, and more.**
+<h1 align="center">drurl</h1>
 
-Check any link for redirects, HTTP status, final destination, phishing, malware, and more — right from your terminal.
+<p align="center">
+  <strong>CLI tool to check URLs for redirects, security threats, and more.</strong>
+</p>
 
-🔍 Powered by [Google Safe Browsing](https://safebrowsing.google.com/) — the same protection used by Chrome, Firefox & Safari.
+<p align="center">
+  <a href="https://www.npmjs.com/package/drurl-cli"><img src="https://img.shields.io/npm/v/drurl-cli.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/drurl-cli"><img src="https://img.shields.io/npm/dm/drurl-cli.svg" alt="npm downloads"></a>
+  <a href="https://github.com/haseebalam/DrURL/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license"></a>
+</p>
 
-## Installation
+<p align="center">
+  Check any link for redirects, HTTP status, final destination, phishing, malware, and more — right from your terminal.
+</p>
+
+<p align="center">
+  🔍 <strong>Powered by Google Safe Browsing</strong> — the same protection used by Chrome, Firefox & Safari.
+</p>
+
+---
+
+## 📦 Installation
 
 ```bash
-npm install -g drurl
+npm install -g drurl-cli
 ```
 
-## Usage
+---
+
+## 🚀 Usage
 
 ```bash
 # Check a URL
@@ -27,7 +47,9 @@ drurl --help
 drurl --version
 ```
 
-## Output
+---
+
+## 📋 Output Example
 
 ```
 🔗 Checking: bit.ly/example
@@ -47,46 +69,69 @@ drurl --version
 🌐 More at https://redirectchecker.com
 ```
 
-## Features
+---
 
-- **Redirect Chain** — See every hop from start to final destination
-- **Security Check** — Google Safe Browsing detection for malware, phishing, unwanted software
-- **Response Times** — Per-hop and total response times
-- **Health Score** — 0-100 score based on status codes, redirects, speed, and threats
-- **Exit Codes** — `0` = safe, `1` = error, `2` = threat detected (useful for scripts)
+## ✨ Features
 
-## Exit Codes
+| Feature | Description |
+|---------|-------------|
+| 🔗 **Redirect Chain** | See every hop from start to final destination |
+| 🛡️ **Security Check** | Google Safe Browsing detection for malware, phishing, unwanted software |
+| ⏱️ **Response Times** | Per-hop and total response times |
+| 📊 **Health Score** | 0-100 score based on status codes, redirects, speed, and threats |
+| 🔢 **Exit Codes** | `0` = safe, `1` = error, `2` = threat detected (useful for scripts) |
+
+---
+
+## 🔢 Exit Codes
 
 | Code | Meaning |
 |------|---------|
-| 0 | Success, URL is safe |
-| 1 | Error (network, invalid URL, etc.) |
-| 2 | Threat detected (phishing, malware, etc.) |
+| `0` | ✅ Success, URL is safe |
+| `1` | ❌ Error (network, invalid URL, etc.) |
+| `2` | 🚨 Threat detected (phishing, malware, etc.) |
 
-Use in scripts:
+### Use in Scripts
+
 ```bash
 drurl suspicious-link.com
+
 if [ $? -eq 2 ]; then
   echo "⚠️ Threat detected!"
 fi
 ```
 
-## API
+---
+
+## 🤖 Also Available
+
+### Telegram Bot
+
+Check links directly in Telegram: **[@DrURLbot](https://t.me/DrURLbot)**
+
+Just type `@DrURLbot https://example.com` in any chat to check a link inline.
+
+### Website
+
+Full-featured web interface at **[RedirectChecker.com](https://redirectchecker.com)**
+
+---
+
+## 🔌 API
 
 This CLI uses the [RedirectChecker.com](https://redirectchecker.com) API.
 
-## Telegram Bot
+---
 
-Also available as a Telegram bot: [@DrURLbot](https://t.me/DrURLbot)
+## 📄 License
 
-Type `@DrURLbot https://example.com` in any chat to check a link inline.
+MIT © [RedirectChecker.com](https://redirectchecker.com)
 
-## License
+---
 
-MIT
+## 🔗 Links
 
-## Links
-
-- Website: [redirectchecker.com](https://redirectchecker.com)
-- Telegram Bot: [@DrURLbot](https://t.me/DrURLbot)
-- Issues: [GitHub Issues](https://github.com/redirectchecker/drurl/issues)
+- 🌐 **Website:** [redirectchecker.com](https://redirectchecker.com)
+- 🤖 **Telegram Bot:** [@DrURLbot](https://t.me/DrURLbot)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/haseebalam/DrURL/issues)
+- ⭐ **Star on GitHub:** [github.com/haseebalam/DrURL](https://github.com/haseebalam/DrURL)
