@@ -52,21 +52,35 @@ drurl --version
 ## 📋 Output Example
 
 ```
-🔗 Checking: bit.ly/example
+🔗 URL Redirection Report
+────────────────────────────────────────────────────────────
+📎 bit.ly/example
 
-📍 Redirect Chain:
-  ├─ [301] https://bit.ly/example 125ms
-  └─ [200] https://example.com 89ms
+📍 Redirect Chain
 
-🎯 Final: https://example.com
-   Status: 200 | Redirects: 1 | Time: 214ms
+↪️  https://bit.ly/example
+   301 Moved Permanently ⏱️  125ms
 
-✅ Security: Safe (Google Safe Browsing)
+✅ https://example.com
+   200 OK ⏱️  89ms
 
-🟢 Health Score: 100/100
+────────────────────────────────────────────────────────────
 
-📍 Scanned from Amsterdam, NL (AMS)
-🌐 More at https://redirectchecker.com
+📊 Summary
+   • Redirects: 1
+   • Total Time: 214ms
+   • Final Status: 200
+   • 🔒 HTTPS
+
+🟢 Health: 100/100 Excellent
+   ██████████
+
+✅ SAFE — No threats detected
+   Advisory by Google Safe Browsing
+
+────────────────────────────────────────────────────────────
+📍 Scanned as Chrome 124 from 🇳🇱 Amsterdam
+🌐 More details at redirectchecker.com
 ```
 
 ---
