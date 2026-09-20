@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://redirectchecker.com/logo.png" alt="DrURL" width="80" />
+  <img src="https://raw.githubusercontent.com/haseebalam/DrURL/main/DrURL.jpg" alt="DrURL" width="120" />
 </p>
 
 <h1 align="center">drurl</h1>
