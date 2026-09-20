@@ -1,6 +1,6 @@
 {
-  "name": "drurl",
-  "version": "1.0.0",
+  "name": "drurl-cli",
+  "version": "1.0.1",
   "description": "CLI tool to check URLs for redirects, security threats, and more",
   "main": "src/index.js",
   "bin": {
